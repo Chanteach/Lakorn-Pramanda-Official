@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .menu-item {
+    white-space: nowrap;
+    overflow: visible;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+  
+  .row {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer-col h4 {
+    white-space: nowrap;
+    overflow-x: visible;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .footer-col ul a {
+    font-size: 14px !important;
+    margin: 5px 0;
+    padding-left: 0;
+    line-height: 1.6;
+    white-space: nowrap;          
+    overflow-wrap: break-word;    
+    word-break: break-word;       
+    word-wrap: break-word;        
+    overflow-x: visible;       
+    display: block;
+  }
+
+  .credit {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+
+  .logonav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fb-responsive iframe {
+    max-width: 480px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .menu-item {
+    white-space: nowrap;
+    overflow: visible;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+  
+  .row {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer-col h4 {
+    white-space: nowrap;
+    overflow-x: visible;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+  
+  .footer-col ul a  {
+    font-size: 14px !important;
+    margin: 5px 0;
+    padding-left: 0;
+    line-height: 1.6;
+    white-space: nowrap;          
+    overflow-wrap: break-word;    
+    word-break: break-word;       
+    word-wrap: break-word;        
+    overflow-x: visible;       
+    display: block;
+  }
+
+  .credit {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+  .menu-item {
+    white-space: nowrap;
+    overflow: visible;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+  
+  .row {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer-col h4 {
+    white-space: nowrap;
+    overflow-x: visible;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .footer-col ul a {
+    font-size: 14px !important;
+    margin: 5px 0;
+    padding-left: 0;
+    line-height: 1.6;
+    white-space: nowrap;          
+    overflow-wrap: break-word;    
+    word-break: break-word;       
+    word-wrap: break-word;        
+    overflow-x: visible;       
+    display: block;
+  }
+
+  .credit {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+}
+
+.fb-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.fb-responsive iframe {
+    width: 500px;
+    height: 600px;
+}
+
+nav {
+    width: 100%;
+    height: 7vw;
+    background: #263a53;
+}
+
+.nav-container {
+    max-width: 90vw;
+    height: 100%;
+    background-color: #263a53;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logonav {
+    width: 6vw;
+    object-fit: contain;
+    padding: 0;
+}
+
+.menu-item {
+    font-size: 1.5vw;
+    color: white;
+    padding: 1px;
+    margin: 35px;
+}
+
+body {
+    text-transform: capitalize;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer {
+    background: #263a53;
+    padding: 70px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 30%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #b0b0b0;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+
+.footer-col ul a:hover{
+    color: white;
+    padding-left: 6px;
+}
+
+.credit {
+    color: white;
+}

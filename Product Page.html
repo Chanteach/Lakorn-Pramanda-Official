@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lakorn Pramanda Official</title>
+    <link rel="icon" type="image/x-icon" href="images/android-chrome-512x512.png">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="=X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="Product Page.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="Product Page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>    
+    <nav>
+        <div class="nav-container">
+            <a href="About Page.html">
+                <img src="images/Logo Lakorn White.png" class="logonav">
+            </a>
+            <div onclick="openbag()" style="cursor: pointer;" class="nav-profile-bag"> 
+                <i class="fas fa-bag-shopping"></i>
+            </div>
+        </div>
+                    <div id="bagcount" class="bagcount" style="display: none;">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar">
+            <input onkeyup="searchsomething(this)" id="txt_search" type="text" class="sidebar-search" placeholder="ค้นหา...">
+            <a onclick="searchproduct('all')" class="sidebar-items">
+                ทั้งหมด
+                </a>
+            <a onclick="searchproduct('ของที่ระลึก1')" class="sidebar-items">
+                ของที่ระลึก 1
+                </a>
+            <a onclick="searchproduct('ของที่ระลึก2')" class="sidebar-items">
+                ของที่ระลึก 2
+                </a>
+        </div>
+    <div id="productlist" class="product">
+       
+    </div>
+    </div>
+
+    <div id="modalDesc" class="modal" style="display: none;">
+        <div onclick="closemodal()" class="modal-bg"></div>
+        <div class="modal-page">
+            <h2>รายละเอียด</h2>
+            <br>
+            <div class="modaldesc-content">
+                <img id="mdd-img" class="modaldesc-img" src="/Users/mac/Documents/Lakorn Pramanda/Photo Lakorn/Logo LK Blue/Logo Lakorn Pramanda.jpgs"
+                alt="">
+            <div class="modaldesc-detail">
+                <p id="mdd-name" style="font-size: 1.5vw;">พวงกุญแจ</p>
+                <p id="mdd-price" style="font-size: 1.2vw;">50 THB</p>
+                <br>
+                <p id="mdd-desc" style="color: #adadad;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perspiciatis non modi aliquid impedit delectus culpa voluptate aliquam quaerat corrupti distinctio eius facilis veritatis maxime fugit, sed eaque odit deleniti!</p>
+                <br>
+                <div class="btn-control">
+                    <button onclick="closemodal()" class="btn">
+                        ปิด
+                    </button>
+                    <button onclick="addtobag()" class="btn btn-buy">
+                        เพิ่มไปยังกระเป๋า
+                    </button>
+                </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="modalbag" class="modal" style="display: none;"> 
+        <div onclick="closemodal()" class="modal-bg"></div>
+        <div class="modal-page">
+            <h2>กระเป๋าของฉัน</h2>
+            <h4>ยืนยันรายการแล้วกดชำระเงิน</h4>
+            <a href="https://script.google.com/macros/s/AKfycbxW0NEFh6CRdEGJKAc4tcIqjKw3Tva7aucsxY5SWvoSel_uqjehUd_VtUxfF_2H83w/exec" style="color: red;"><h2>ชำระเงิน</h2></a>
+            <br>
+            <div id="mybag" class="baglist">
+            </div>
+            <div class="btn-control">
+                <button onclick="closemodal()" class="btn">
+                    ยกเลิก
+                </button>
+                <button onclick="buynow()" class="btn btn-buy">
+                    ยืนยันรายการ
+                </button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <div class="container-footer">
+            <div class="row">
+                <div class="footer-col">
+                <h4>Lakorn Pramanda Official</h4>
+                <ul>
+                    <li><a href="About Page.html">เกี่ยวกับ</a></li>
+                    <li><a href="Product Page.html">สินค้า</a></li>
+                    <li><a href="News Page.html">ข่าวสาร</a></li>
+                </ul>
+                </div>
+                <div class="footer-col">
+                <h4>ติดต่อละครเวทีพระมารดาฯ</h4>
+                <ul>
+                    <li><a href="mailto:lakornpramandaofficial@gmail.com">lakornpramandaofficial@gmail.com</a></li>
+                    <li><a href="https://maps.app.goo.gl/ucuTNtQCCX1JBbKq9">โรงเรียนพระมารดานิจจานุเคราะห์ <br> เลขที่ 1 ซอยนวมินทร์ 81 ถนนนวมินทร์ <br> แขวงคลองจั่น เขตบางกะปิ กรุงเทพฯ 10240</a></li>
+                </ul>
+                </div>
+                <div class="footer-col">
+                <h4>ช่องทางติดตามละครเวทีพระมารดาฯ</h4>
+                <div class="social-link"></div>
+                <ul>
+                    <a href="https://www.facebook.com/lakornpmd"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="https://www.instagram.com/lakornpmd_official?igsh=MTdvY2ZpZGg2ZG5lOQ=="><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.youtube.com/@lakornpramanda5263"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://www.tiktok.com/@lakornpramandaofficial?_t=ZS-8vMcahF6wuw&_r=1"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+                    <a href="https://www.ticketmelon.com/lkpmd"><i class="fa-solid fa-ticket-simple"></i> Ticketmelon</a>
+                    <a href="https://anyflip.com/bookcase/shxuj/"><i class="fa-solid fa-book-open"></i> Anyflip</a>
+                </ul>
+                </div>
+                <div class="credit">
+                <h4>© 2025 Lakorn Pramanda. All rights reserved.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>
